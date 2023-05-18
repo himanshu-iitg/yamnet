@@ -92,7 +92,7 @@ _YAMNET_LAYER_DEFS = [
 ]
 
 
-def yamnet(features, params):
+def yamnet_model(features, params):
   """Define the core YAMNet mode in Keras."""
   net = layers.Reshape(
       (params.patch_frames, params.patch_bands, 1),
