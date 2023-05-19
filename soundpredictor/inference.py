@@ -24,7 +24,7 @@ import soundfile as sf
 import tensorflow as tf
 
 import params as yamnet_params
-import yamnet as yamnet_model
+import yamnet_model
 
 
 def main(argv):

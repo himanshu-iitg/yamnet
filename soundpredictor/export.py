@@ -36,7 +36,7 @@ import tensorflow_hub as tfhub
 from tensorflowjs.converters import tf_saved_model_conversion_v2 as tfjs_saved_model_converter
 
 import params as yamnet_params
-import yamnet
+import yamnet_model
 
 
 def log(msg):
@@ -47,7 +47,7 @@ class YAMNet(tf.Module):
   """A TF2 Module wrapper around YAMNet."""
   def __init__(self, weights_path, params):
     super().__init__()
-    self._yamnet = yamnet.yamnet_frames_model(params)
+    self._yamnet = yamnet_model.yamnet_frames_model(params)
     self._yamnet.load_weights(weights_path)
     self._class_map_asset = tf.saved_model.Asset('yamnet_class_map.csv')
 

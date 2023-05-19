@@ -1,7 +1,7 @@
 import numpy as np
 import scipy as scipy
 
-from yamnet import yamnet_predictor, class_names
+from soundpredictor import yamnet_predictor, class_names
 from config.constants import FS
 
 

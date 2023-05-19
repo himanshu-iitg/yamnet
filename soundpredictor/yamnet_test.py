@@ -19,7 +19,7 @@ import numpy as np
 import tensorflow as tf
 
 import params
-import yamnet
+import yamnet_model
 
 class YAMNetTest(tf.test.TestCase):
 
@@ -31,7 +31,7 @@ class YAMNetTest(tf.test.TestCase):
   def setUpClass(cls):
     super().setUpClass()
     cls._params = params.Params()
-    cls._yamnet = yamnet.yamnet_frames_model(cls._params)
+    cls._yamnet = yamnet_model.yamnet_frames_model(cls._params)
     cls._yamnet.load_weights('yamnet.h5')
     cls._yamnet_classes = yamnet.class_names('yamnet_class_map.csv')
 
