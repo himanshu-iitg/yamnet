@@ -9,7 +9,7 @@ setup(
     author_email='himanshukaushik.iitg@gmail.com',
     license='Apache-2.0',
     packages=find_packages(),
-    package_data={'soundpredictor':['*.csv', '*.h5']}, # use package data for only specific files.
+    package_data={"":["*.csv", "*.h5"]}, # use package data for only specific files.
     install_requires=['scipy>=1.10.1',
                       'tensorflow==2.9.0',
                       ],
