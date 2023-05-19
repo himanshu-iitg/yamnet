@@ -8,7 +8,7 @@ setup(
     author='Himanshu Kaushik',
     author_email='himanshukaushik.iitg@gmail.com',
     license='BSD 2-clause',
-    packages=['sound_predictor'],
+    packages=['yamnet'],
     install_requires=['scipy>=1.10.1',
                       'tensorflow==2.12.0',
                       ],
