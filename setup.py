@@ -1,16 +1,16 @@
 from setuptools import setup
 
 setup(
-    name='sound_predictor',
+    name='soundpredictor',
     version='0.1.0',
     description='A Python package for sound classification using yamnet Tensorflow',
     url=' https://github.com/himanshu-iitg/yamnet.git',
     author='Himanshu Kaushik',
     author_email='himanshukaushik.iitg@gmail.com',
-    license='BSD 2-clause',
+    license='Apache-2.0',
     packages=['yamnet'],
     install_requires=['scipy>=1.10.1',
-                      'tensorflow==2.12.0',
+                      'tensorflow==2.9.0',
                       ],
 
     classifiers=[
