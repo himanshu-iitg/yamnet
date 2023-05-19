@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='yamnet',
@@ -8,7 +8,7 @@ setup(
     author='Himanshu Kaushik',
     author_email='himanshukaushik.iitg@gmail.com',
     license='Apache-2.0',
-    packages=['soundpredictor'],
+    packages=find_packages(),
     install_requires=['scipy>=1.10.1',
                       'tensorflow==2.9.0',
                       ],
