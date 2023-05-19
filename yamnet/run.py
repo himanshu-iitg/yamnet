@@ -1,8 +1,8 @@
 import numpy as np
 import scipy as scipy
 
-from soundpredictor import yamnet_predictor, class_names
-from config.constants import FS
+from yamnet.soundpredictor import yamnet_predictor, class_names
+from yamnet.config.constants import FS
 
 
 def ensure_sample_rate(original_sample_rate, waveform,

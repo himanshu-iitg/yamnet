@@ -1,4 +1,4 @@
-from run import get_top_audio_scores
+from yamnet.run import get_top_audio_scores
 
 """
 pyexample.
