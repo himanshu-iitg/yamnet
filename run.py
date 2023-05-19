@@ -15,7 +15,7 @@ def ensure_sample_rate(original_sample_rate, waveform,
     return desired_sample_rate, waveform
 
 
-def get_audio_scores(fs, audio, top_n = 10):
+def get_top_audio_scores(fs, audio, top_n = 10):
     fs, audio = ensure_sample_rate(fs, audio)
 
     scores, embeddings, spectrogram = yamnet_predictor(audio)
