@@ -5,7 +5,7 @@ sys.path.append(os.path.dirname(__file__))
 
 import time
 
-from yamnet.config.constants import MODEL_PATH, CLASS_MAP_PATH, FS
+from yamnet.config.constants import MODEL_PATH, CLASS_MAP_PATH, FS, HOP_SECONDS
 from yamnet.soundpredictor import params as yamnet_params, yamnet_model
 
 x = time.time()
